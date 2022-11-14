@@ -2705,7 +2705,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1581687028}
         m_TargetAssemblyTypeName: SceneFlowController, Assembly-CSharp
         m_MethodName: Exit
         m_Mode: 1
@@ -3785,9 +3785,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SceneFlowController, Assembly-CSharp
-        m_MethodName: GoToMainMenu
+      - m_Target: {fileID: 1581687029}
+        m_TargetAssemblyTypeName: GameUI, Assembly-CSharp
+        m_MethodName: UnPause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3797,9 +3797,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameUI, Assembly-CSharp
-        m_MethodName: UnPause
+      - m_Target: {fileID: 1581687028}
+        m_TargetAssemblyTypeName: SceneFlowController, Assembly-CSharp
+        m_MethodName: GoToMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5462,7 +5462,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   PM: {fileID: 0}
-  unityEditorSpeed: 0
 --- !u!114 &904781430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6537,6 +6536,18 @@ MonoBehaviour:
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 387701926}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1581687029}
+        m_TargetAssemblyTypeName: GameUI, Assembly-CSharp
+        m_MethodName: ShowGO
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1982065990}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -8275,7 +8286,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1581687029}
         m_TargetAssemblyTypeName: GameUI, Assembly-CSharp
         m_MethodName: HideGO
         m_Mode: 2
@@ -8287,7 +8298,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1581687029}
+        m_TargetAssemblyTypeName: GameUI, Assembly-CSharp
+        m_MethodName: ShowGO
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 387701926}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1581687029}
         m_TargetAssemblyTypeName: GameUI, Assembly-CSharp
         m_MethodName: UnPause
         m_Mode: 1
