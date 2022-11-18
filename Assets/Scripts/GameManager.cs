@@ -31,4 +31,9 @@ public class GameManager : MonoBehaviour
     {
         
     }
+
+    public void UnlockAchivments(string name)
+    {
+        GooglePlay.UnlockAchievement(name);
+    }
 }
