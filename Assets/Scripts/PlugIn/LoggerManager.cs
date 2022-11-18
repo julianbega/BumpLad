@@ -31,23 +31,23 @@ public class LoggerManager : MonoBehaviour
         logs.OnAndroidCall += UpdateShowingText;
         UpdateShowingText("Start Test PluginExample");
     }
-    private void ExampleLogCall() => logs.AndroidLog("Ejemplo de log");
+    public void ExampleLogCall() => logs.AndroidLog("Ejemplo de log");
 
-    private void UnityLogCall() => Debug.Log("example_unity_Debug.Log");
+    public void UnityLogCall() => Debug.Log("example_unity_Debug.Log");
 
-    private void UpdateShowingText(string msg)
+    public void UpdateShowingText(string msg)
     {
         fileManager.WriteFile(msg + '\n');
         showeableText.text = fileManager.ReadFile();
     }
-    private void ShowAlert()
+    public void ShowAlert()
     {
         alertManager.showAlertDialog(new string[] { "POPAndroid", "ClearData?", "NO", "YES" }, (Int32 obj) => {
             if (obj == -2)
                 ClearData();
         });
     }
-    private void ClearData()
+    public void ClearData()
     {
         fileManager.ClearFile();
         UpdateShowingText(" ");
