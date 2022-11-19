@@ -16,6 +16,7 @@ public class GameUI : MonoBehaviour
     {
         GM = FindObjectOfType<GameManager>();
         PM = FindObjectOfType<PlayerManager>();
+        money.text = GM.money.ToString();
     }
 
     // Update is called once per frame
@@ -26,7 +27,8 @@ public class GameUI : MonoBehaviour
 
     public void UpdateMoney()
     {
-        money.text = PM.money.ToString();
+        GM.money += PM.money;
+        money.text = GM.money.ToString();
     }
 
     public void ShowGO(GameObject objectToShow)
