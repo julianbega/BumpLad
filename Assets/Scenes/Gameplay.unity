@@ -249,7 +249,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -263,7 +263,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.55, y: 1.25}
+  m_Size: {x: 0.55, y: 1.41}
   m_EdgeRadius: 0
 --- !u!114 &43142562
 MonoBehaviour:
@@ -396,7 +396,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -410,7 +410,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.55, y: 1.25}
+  m_Size: {x: 0.55, y: 1.41}
   m_EdgeRadius: 0
 --- !u!114 &44439492
 MonoBehaviour:
@@ -871,7 +871,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -885,7 +885,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.55, y: 1.25}
+  m_Size: {x: 0.55, y: 1.41}
   m_EdgeRadius: 0
 --- !u!114 &84579233
 MonoBehaviour:
@@ -3151,7 +3151,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3165,7 +3165,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.55, y: 1.25}
+  m_Size: {x: 0.55, y: 1.41}
   m_EdgeRadius: 0
 --- !u!114 &364110795
 MonoBehaviour:
@@ -4656,7 +4656,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4670,7 +4670,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.55, y: 1.25}
+  m_Size: {x: 0.55, y: 1.41}
   m_EdgeRadius: 0
 --- !u!114 &499747396
 MonoBehaviour:
@@ -7088,7 +7088,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -7102,7 +7102,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.55, y: 1.25}
+  m_Size: {x: 0.55, y: 1.41}
   m_EdgeRadius: 0
 --- !u!114 &802670286
 MonoBehaviour:
@@ -7325,10 +7325,8 @@ MonoBehaviour:
   Yposition:
   - -6.5
   - 6.5
-  fastMaxSpeed: 8
-  fastMinSpeed: 5
-  slowMaxSpeed: 8
-  slowMinSpeed: 5
+  maxSpeed: 5
+  minSpeed: 8
 --- !u!4 &817216913
 Transform:
   m_ObjectHideFlags: 0
@@ -10987,7 +10985,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -11001,7 +10999,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.55, y: 1.25}
+  m_Size: {x: 0.55, y: 1.41}
   m_EdgeRadius: 0
 --- !u!114 &1238129163
 MonoBehaviour:
@@ -11415,7 +11413,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -11429,7 +11427,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.55, y: 1.25}
+  m_Size: {x: 0.55, y: 1.41}
   m_EdgeRadius: 0
 --- !u!114 &1299023421
 MonoBehaviour:
@@ -11832,7 +11830,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -11846,7 +11844,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.55, y: 1.25}
+  m_Size: {x: 0.55, y: 1.41}
   m_EdgeRadius: 0
 --- !u!114 &1308936087
 MonoBehaviour:
@@ -11922,7 +11920,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1308936085}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.93, y: 0.13, z: -1.05}
+  m_LocalPosition: {x: 20, y: 0, z: -1.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1778271146}
@@ -15368,7 +15366,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -15382,7 +15380,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.55, y: 1.25}
+  m_Size: {x: 0.55, y: 1.41}
   m_EdgeRadius: 0
 --- !u!114 &1817221144
 MonoBehaviour:
@@ -17511,7 +17509,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -17525,7 +17523,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.55, y: 1.25}
+  m_Size: {x: 0.55, y: 1.41}
   m_EdgeRadius: 0
 --- !u!114 &1968213426
 MonoBehaviour:
@@ -18086,7 +18084,7 @@ Transform:
   m_GameObject: {fileID: 2048192640}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.0762529, y: 9.387702, z: -1.0987389}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.02, z: 1}
   m_Children:
   - {fileID: 1017028890}
   - {fileID: 1523806031}
@@ -19032,7 +19030,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -19046,7 +19044,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.55, y: 1.25}
+  m_Size: {x: 0.55, y: 1.41}
   m_EdgeRadius: 0
 --- !u!114 &2137851245
 MonoBehaviour:

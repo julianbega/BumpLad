@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50eacceb9ea3d6f49b404bf7b23a08ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: {fileID: 0}
+  money: {fileID: 1108917025770822116}
 --- !u!4 &150732459
 Transform:
   m_ObjectHideFlags: 0
@@ -1009,20 +1009,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 364654e90b1b2574e8cf38c889f52048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 0
+  money: 150
   highscore: 0
-  selectedCar: {fileID: 0}
-  playerCarsList:
-  - car: {fileID: -558417346531380334, guid: 044801f4a6ff9e0408e63fbbaaff8c49, type: 3}
-    unlocked: 1
-  - car: {fileID: -619152669359170530, guid: 35de801a41bb9e742a124b79c7edfa8b, type: 3}
-    unlocked: 0
-  - car: {fileID: -2554030691755541986, guid: 35de801a41bb9e742a124b79c7edfa8b, type: 3}
-    unlocked: 0
-  - car: {fileID: -8133443095937036803, guid: 35de801a41bb9e742a124b79c7edfa8b, type: 3}
-    unlocked: 0
-  - car: {fileID: -6133160613723504190, guid: 35de801a41bb9e742a124b79c7edfa8b, type: 3}
-    unlocked: 0
+  selectedCar: {fileID: -558417346531380334, guid: 044801f4a6ff9e0408e63fbbaaff8c49, type: 3}
 --- !u!1 &1329161496
 GameObject:
   m_ObjectHideFlags: 0
@@ -2138,7 +2127,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -2.2500036}
+  m_AnchoredPosition: {x: 35, y: -2.2500036}
   m_SizeDelta: {x: 0, y: -4.4999924}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1108917025770822119

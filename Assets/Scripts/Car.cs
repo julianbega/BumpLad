@@ -23,9 +23,10 @@ public class Car : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.collider.CompareTag("Car"))
+        
+        if (collision.gameObject.CompareTag("Car"))
         {
             Debug.Log("Choque");
             float auxSpeed = collision.gameObject.GetComponent<Car>().speed;
@@ -36,13 +37,17 @@ public class Car : MonoBehaviour
             }
         }
 
-        if (collision.collider.CompareTag("Finish"))
+        if (collision.gameObject.CompareTag("Finish"))
         {
             Debug.Log("Finish");
             speed = 0;
             transform.position = new Vector3(15, 15, -1.0f);
             isOnGame = false;
         }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+       
     }
 
    

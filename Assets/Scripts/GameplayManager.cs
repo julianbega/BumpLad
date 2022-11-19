@@ -9,11 +9,8 @@ public class GameplayManager : MonoBehaviour
     public float[] Xposition;
     public float[] Yposition;
 
-    public float fastMaxSpeed;
-    public float fastMinSpeed;
-    public float slowMaxSpeed;
-    public float slowMinSpeed;
-
+    public float maxSpeed;
+    public float minSpeed;
     private void Start()
     {
         InvokeRepeating("spawner", 2.0f, 0.5f);
@@ -26,17 +23,15 @@ public class GameplayManager : MonoBehaviour
         intAux = Random.Range(0, 2);
         cars[id].goingFast = intAux;
         float floatAux;
-        float aux = Random.Range(Xposition[0], Xposition[1]);
+        floatAux = Random.Range(minSpeed, maxSpeed);
+        float aux = Random.Range(Xposition[0], Xposition[5]);
+        cars[id].speed = floatAux;
         if (cars[id].goingFast == 0)
         {
-            floatAux = Random.Range(slowMinSpeed, slowMaxSpeed);
-            cars[id].speed = floatAux;
             cars[id].gameObject.transform.position = new Vector3(aux, Yposition[0], transform.position.z);
         }
         else
         {
-            floatAux = Random.Range(fastMinSpeed, fastMaxSpeed);
-            cars[id].speed = floatAux;
             cars[id].gameObject.transform.position = new Vector3(aux, Yposition[1], transform.position.z);
         }
         

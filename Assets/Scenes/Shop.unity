@@ -228,7 +228,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1176002796}
+  m_Father: {fileID: 736088220}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -300,17 +300,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 240914429}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1931353700}
-  m_Father: {fileID: 1381893400}
-  m_RootOrder: 1
+  - {fileID: 1381893400}
+  m_Father: {fileID: 1176002796}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -43.5}
+  m_AnchoredPosition: {x: -65, y: -97.500015}
   m_SizeDelta: {x: 80, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &240914431
@@ -356,7 +357,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 240914432}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1456877482}
+        m_TargetAssemblyTypeName: ShopUI, Assembly-CSharp
+        m_MethodName: BuyOrSelectCar
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &240914432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -424,7 +437,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1176002796}
+  m_Father: {fileID: 736088220}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -646,17 +659,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 443116978}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 879113748}
-  m_Father: {fileID: 634096978}
+  - {fileID: 634096978}
+  m_Father: {fileID: 1176002796}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -43.500015}
+  m_AnchoredPosition: {x: -190, y: -97.500015}
   m_SizeDelta: {x: 80, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &443116980
@@ -702,7 +716,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 443116981}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1456877482}
+        m_TargetAssemblyTypeName: ShopUI, Assembly-CSharp
+        m_MethodName: BuyOrSelectCar
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &443116981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -988,13 +1014,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 810101637}
-  - {fileID: 443116979}
-  m_Father: {fileID: 1176002796}
-  m_RootOrder: 9
+  m_Father: {fileID: 443116979}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -190, y: -54}
+  m_AnchoredPosition: {x: 0, y: 43.50003}
   m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &634096979
@@ -1198,7 +1223,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1176002796}
+  m_Father: {fileID: 736088220}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1270,17 +1295,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 652808686}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 641259446}
-  m_Father: {fileID: 2063946122}
-  m_RootOrder: 1
+  - {fileID: 2063946122}
+  m_Father: {fileID: 1176002796}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -43.500015}
+  m_AnchoredPosition: {x: 60, y: -97.500015}
   m_SizeDelta: {x: 80, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &652808688
@@ -1326,7 +1352,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 652808689}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1456877482}
+        m_TargetAssemblyTypeName: ShopUI, Assembly-CSharp
+        m_MethodName: BuyOrSelectCar
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &652808689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1397,7 +1435,7 @@ RectTransform:
   m_Children:
   - {fileID: 1203978023}
   m_Father: {fileID: 1176002796}
-  m_RootOrder: 12
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1447,7 +1485,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 653922075}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1456877482}
+        m_TargetAssemblyTypeName: ShopUI, Assembly-CSharp
+        m_MethodName: BuyOrSelectCar
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &653922075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1486,6 +1536,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 653922072}
   m_CullTransparentMesh: 1
+--- !u!1 &736088219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 736088220}
+  m_Layer: 5
+  m_Name: CarImages
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &736088220
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736088219}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1725636842}
+  - {fileID: 1249019967}
+  - {fileID: 643149820}
+  - {fileID: 242594504}
+  - {fileID: 1048516243}
+  - {fileID: 755605768}
+  - {fileID: 965328586}
+  - {fileID: 97144895}
+  - {fileID: 1872696699}
+  - {fileID: 1705528576}
+  m_Father: {fileID: 1176002796}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &755605767
 GameObject:
   m_ObjectHideFlags: 0
@@ -1515,7 +1610,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1176002796}
+  m_Father: {fileID: 736088220}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1858,7 +1953,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1176002796}
+  m_Father: {fileID: 736088220}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2067,7 +2162,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1176002796}
+  m_Father: {fileID: 736088220}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2176,17 +2271,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1172557961}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 997637292}
-  m_Father: {fileID: 1616547657}
-  m_RootOrder: 1
+  - {fileID: 1616547657}
+  m_Father: {fileID: 1176002796}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -43.500015}
+  m_AnchoredPosition: {x: 185, y: -97.500015}
   m_SizeDelta: {x: 80, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1172557963
@@ -2232,7 +2328,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1172557964}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1456877482}
+        m_TargetAssemblyTypeName: ShopUI, Assembly-CSharp
+        m_MethodName: BuyOrSelectCar
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1172557964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2298,21 +2406,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1725636842}
-  - {fileID: 1249019967}
-  - {fileID: 643149820}
-  - {fileID: 242594504}
-  - {fileID: 1048516243}
-  - {fileID: 755605768}
-  - {fileID: 965328586}
-  - {fileID: 97144895}
-  - {fileID: 1616547657}
-  - {fileID: 634096978}
-  - {fileID: 2063946122}
-  - {fileID: 1381893400}
+  - {fileID: 736088220}
+  - {fileID: 443116979}
+  - {fileID: 240914430}
+  - {fileID: 652808687}
+  - {fileID: 1172557962}
   - {fileID: 653922073}
-  - {fileID: 1872696699}
-  - {fileID: 1705528576}
   m_Father: {fileID: 1194958681}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2562,7 +2661,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1176002796}
+  m_Father: {fileID: 736088220}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2772,13 +2871,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 620066834}
-  - {fileID: 240914430}
-  m_Father: {fileID: 1176002796}
-  m_RootOrder: 11
+  m_Father: {fileID: 240914430}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -65, y: -54}
+  m_AnchoredPosition: {x: 0, y: 43.50003}
   m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1381893401
@@ -2964,8 +3062,8 @@ GameObject:
   - component: {fileID: 1456877485}
   - component: {fileID: 1456877484}
   - component: {fileID: 1456877483}
-  - component: {fileID: 1456877482}
   - component: {fileID: 1456877481}
+  - component: {fileID: 1456877482}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2994,14 +3092,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1456877480}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7e95745c683f84cbcb5af5770abcb8, type: 3}
+  m_Script: {fileID: 11500000, guid: 71f4adc939cf53a43bf378169881ddc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AlertButton: {fileID: 0}
-  logButton: {fileID: 0}
-  logButtonUnity: {fileID: 0}
-  ClearDataButton: {fileID: 0}
-  showeableText: {fileID: 0}
+  carsInShop:
+  - {fileID: 11400000, guid: 62ae81b2461e73b4a9d3f95edeb8d3a3, type: 2}
+  - {fileID: 11400000, guid: b9dc9480ee200854e801be7a3335c561, type: 2}
+  - {fileID: 11400000, guid: 10a3ce299ce16084fb2b7d41c601b194, type: 2}
+  - {fileID: 11400000, guid: 7707b0a83ab7ad147a430ca1966bdc18, type: 2}
+  - {fileID: 11400000, guid: 37d6d827582ae7144bc3b22cd3ab7169, type: 2}
+  buttonsText:
+  - {fileID: 879113749}
+  - {fileID: 1931353701}
+  - {fileID: 641259447}
+  - {fileID: 997637293}
+  - {fileID: 1203978024}
+  showMoney: {fileID: 1640074777}
+  GM: {fileID: 0}
 --- !u!114 &1456877483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3250,13 +3357,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1545629385}
-  - {fileID: 1172557962}
-  m_Father: {fileID: 1176002796}
-  m_RootOrder: 8
+  m_Father: {fileID: 1172557962}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 185, y: -54}
+  m_AnchoredPosition: {x: 0, y: 43.50003}
   m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1616547658
@@ -3331,7 +3437,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -2.2500036}
+  m_AnchoredPosition: {x: 31, y: -2.2500036}
   m_SizeDelta: {x: 0, y: -4.4999924}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1640074777
@@ -3460,8 +3566,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1176002796}
-  m_RootOrder: 14
+  m_Father: {fileID: 736088220}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3535,7 +3641,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1176002796}
+  m_Father: {fileID: 736088220}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -3676,8 +3782,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1176002796}
-  m_RootOrder: 13
+  m_Father: {fileID: 736088220}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3886,13 +3992,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2131550808}
-  - {fileID: 652808687}
-  m_Father: {fileID: 1176002796}
-  m_RootOrder: 10
+  m_Father: {fileID: 652808687}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 60, y: -54}
+  m_AnchoredPosition: {x: 0, y: 43.50003}
   m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2063946123
