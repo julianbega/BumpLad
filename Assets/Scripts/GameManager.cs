@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [System.Serializable]
+    public struct playerCars
+    {
+        public Sprite car;
+        public bool unlocked;
+    }
     
     public static GameManager Instance { get; private set; }
     void Awake()
@@ -19,7 +25,8 @@ public class GameManager : MonoBehaviour
     
     public int money;
     public float highscore;
-    public Sprite car;
+    public Sprite selectedCar;
+    public List<playerCars> playerCarsList;
 
     void Start()
     {
