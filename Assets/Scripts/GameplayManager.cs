@@ -17,6 +17,7 @@ public class GameplayManager : MonoBehaviour
     private void Start()
     {
         InvokeRepeating("spawner", 2.0f, 0.5f);
+        GooglePlay.Init();
     }
     public void spawnCar(int id)
     {
