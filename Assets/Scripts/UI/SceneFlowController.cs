@@ -19,6 +19,10 @@ public class SceneFlowController : MonoBehaviour
     {
         SceneManager.LoadScene("Logs", LoadSceneMode.Single);
     }
+    public void UnPause()
+    {
+        Time.timeScale = 1;
+    }
     public void Exit()
     {
         Application.Quit();

@@ -28,7 +28,7 @@ public class Car : MonoBehaviour
         
         if (collision.gameObject.CompareTag("Car"))
         {
-            Debug.Log("Choque");
+            Debug.Log("ChoqueEntreAutos");
             float auxSpeed = collision.gameObject.GetComponent<Car>().speed;
             goingFast = 0;
             if (auxSpeed >= speed)
@@ -45,10 +45,7 @@ public class Car : MonoBehaviour
             isOnGame = false;
         }
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-       
-    }
+
 
    
 }
