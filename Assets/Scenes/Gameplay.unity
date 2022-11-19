@@ -7302,13 +7302,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a95476b8eecedbf4890f10f5d0a5305f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cars: []
-  Xposition: []
-  Yposition: []
-  fastMaxSpeed: 0
-  fastMinSpeed: 0
-  slowMaxSpeed: 0
-  slowMinSpeed: 0
+  cars:
+  - {fileID: 1308936087}
+  - {fileID: 499747396}
+  - {fileID: 44439492}
+  - {fileID: 802670286}
+  - {fileID: 1299023421}
+  - {fileID: 2137851245}
+  - {fileID: 1817221144}
+  - {fileID: 43142562}
+  - {fileID: 364110795}
+  - {fileID: 1238129163}
+  - {fileID: 84579233}
+  - {fileID: 1968213426}
+  Xposition:
+  - 6.2
+  - 3.75
+  - 1.25
+  - -1.25
+  - -3.75
+  - -6.2
+  Yposition:
+  - -6.5
+  - 6.5
+  fastMaxSpeed: 8
+  fastMinSpeed: 5
+  slowMaxSpeed: 8
+  slowMinSpeed: 5
 --- !u!4 &817216913
 Transform:
   m_ObjectHideFlags: 0
@@ -11902,7 +11922,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1308936085}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20, y: 0, z: -1.05}
+  m_LocalPosition: {x: 19.93, y: 0.13, z: -1.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1778271146}

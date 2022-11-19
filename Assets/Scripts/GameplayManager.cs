@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameplayManager : MonoBehaviour
 {    
-    public List<GameObject> cars;
+    public List<Car> cars;
 
     public float[] Xposition;
     public float[] Yposition;
@@ -21,23 +21,23 @@ public class GameplayManager : MonoBehaviour
     }
     public void spawnCar(int id)
     {
-        cars[id].GetComponent<Car>().isOnGame = true;
+        cars[id].isOnGame = true;
         int intAux;
         intAux = Random.Range(0, 2);
-        cars[id].GetComponent<Car>().goingFast = intAux;
+        cars[id].goingFast = intAux;
         float floatAux;
         float aux = Random.Range(Xposition[0], Xposition[1]);
-        if (cars[id].GetComponent<Car>().goingFast == 0)
+        if (cars[id].goingFast == 0)
         {
             floatAux = Random.Range(slowMinSpeed, slowMaxSpeed);
-            cars[id].GetComponent<Car>().speed = floatAux;
-            cars[id].transform.position = new Vector3(aux, Yposition[0], transform.position.z);
+            cars[id].speed = floatAux;
+            cars[id].gameObject.transform.position = new Vector3(aux, Yposition[0], transform.position.z);
         }
         else
         {
             floatAux = Random.Range(fastMinSpeed, fastMaxSpeed);
-            cars[id].GetComponent<Car>().speed = floatAux;
-            cars[id].transform.position = new Vector3(aux, Yposition[1], transform.position.z);
+            cars[id].speed = floatAux;
+            cars[id].gameObject.transform.position = new Vector3(aux, Yposition[1], transform.position.z);
         }
         
     }
@@ -56,11 +56,11 @@ public class GameplayManager : MonoBehaviour
         bool allTrue = true;
         for (int i = 0; i < 11; i++)
         {
-            if (cars[intAux].GetComponent<Car>().isOnGame == false)
+            if (cars[intAux].isOnGame == false)
                 allTrue = false;
         }
 
-        while (cars[intAux].GetComponent<Car>().isOnGame == true && allTrue == false)
+        while (cars[intAux].isOnGame == true && allTrue == false)
         {
             intAux = Random.Range(0, 11);
         }
