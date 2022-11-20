@@ -14,7 +14,7 @@ public class MenuBackground : MonoBehaviour
         transform.Translate(Vector3.left * Time.deltaTime * speed, Space.World);
         if (transform.position.x <= limitX)
         {
-            transform.position = new Vector3(startX, 0, transform.position.z);
+            transform.position = new Vector3(startX, transform.position.y, transform.position.z);
         }
     }
 }

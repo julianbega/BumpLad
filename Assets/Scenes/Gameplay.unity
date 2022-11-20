@@ -8662,7 +8662,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!212 &904781426
 SpriteRenderer:
@@ -8768,6 +8768,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  body: {fileID: 904781425}
   PM: {fileID: 904781430}
 --- !u!114 &904781430
 MonoBehaviour:
@@ -8781,7 +8782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a6dcb29b677aed42b338ee2098c15b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 0
+  money: 10
   startPos: {x: 0, y: 0, z: 0}
   pauseButton: {fileID: 387701926}
   defeatPanel: {fileID: 413907698}

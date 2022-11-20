@@ -21,10 +21,12 @@ public class GameManager : MonoBehaviour
     public int money;
     public float highscore;
     public Sprite selectedCar;
+    public List<int> selectableCars;
 
 
     void Start()
     {
+        PlayerPrefs.GetInt("money");
         
     }
 

@@ -6,7 +6,9 @@ public class PlayerMovment : MonoBehaviour
 {
 
     public float speed;
-    Rigidbody2D body;
+    public Rigidbody2D body;
+    float dx;
+    float dy;
     public PlayerManager PM;
 
 #if UNITY_EDITOR && !UNITY_ANDROID
@@ -33,17 +35,21 @@ public class PlayerMovment : MonoBehaviour
 
 #endif
 
-#if UNITY_ANDROID
     void Start()
-    {
+    {        
         Input.gyro.enabled = true;
     }
 
     public void Update()
     {
-        transform.position += (Input.gyro.rotationRateUnbiased * Time.deltaTime * speed);
+        dx = Input.acceleration.x * speed * Time.deltaTime;
+        dy = Input.acceleration.y * speed * Time.deltaTime;
+        transform.position = new Vector2 (Mathf.Clamp(transform.position.x, -7.5f, 7.5f), Mathf.Clamp(transform.position.y, -7.5f, 7.5f));
     }
-#endif
+    private void FixedUpdate()
+    {
+        body.velocity = new Vector2(dx, dy);
+    }
 
 
     private void OnCollisionEnter2D(Collision2D collision)
