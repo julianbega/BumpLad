@@ -18,10 +18,29 @@ public class MenuUI : MonoBehaviour
     {
         Invoke("UpdateMoney", 0.04f);
     }
-    private void UpdateMoney()
+    public void UpdateMoney()
     {
         money.text = GM.money.ToString();
     }
 
 
+    public void cheatGainMoney()
+    {
+        GM.money += 50;
+    }
+    public void cheatMoneyToZero()
+    {
+        GM.money = 0;
+    }
+    public void cheatResetSkins()
+    {
+        for (int i = 0; i < GM.shoppers.Count - 1; i++)
+        {
+            GM.shoppers[i].selectable = false;
+            GM.selectableCars.Clear();
+            GM.selectableCars.Add(4);
+            GM.selectedCar = GM.allCars[4];
+        }
+
+    }
 }

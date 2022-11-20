@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     public Sprite selectedCar;
     public List<int> selectableCars;
     public List<Sprite> allCars;
+    public List<Shopper> shoppers;
 
 
     void Start()
@@ -35,15 +36,10 @@ public class GameManager : MonoBehaviour
         }
         selectedCar = allCars[PlayerPrefs.GetInt("SelectedCar")];
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void UnlockAchivments(string name)
     {
         GooglePlay.UnlockAchievement(name);
     }
+
+
 }

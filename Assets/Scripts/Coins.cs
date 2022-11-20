@@ -20,6 +20,7 @@ public class Coins : MonoBehaviour
 
     void Update()
     {
+        isColliding = false;
         transform.Translate(Vector3.down * Time.deltaTime * speed, Space.World);
         if (transform.position.y <= limitY)
         {
@@ -35,7 +36,7 @@ public class Coins : MonoBehaviour
 
     void SpawnCoin()
     {
-        PM.money++;
+        PM.money += 1;
         int aux = Random.Range(0, 5);
         this.transform.position = new Vector3(Xposition[aux], 7.0f, transform.position.z);
     }
@@ -45,18 +46,11 @@ public class Coins : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-
             if (isColliding) return;
             isColliding = true;
-            GUI.UpdateMoney();
             SpawnCoin();
-            StartCoroutine(Reset());
+            GUI.UpdateMoney();
         }
     }
-    IEnumerator Reset()
-    {
-        yield return new WaitForEndOfFrame();
-        isColliding = false;
 
-    }
 }

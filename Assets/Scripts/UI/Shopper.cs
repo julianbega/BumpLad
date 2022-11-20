@@ -10,5 +10,4 @@ public class Shopper : ScriptableObject
     public Sprite carSprite;
     public int price;
     public bool selectable;
-    public TextMeshProUGUI buttonText;
 }
