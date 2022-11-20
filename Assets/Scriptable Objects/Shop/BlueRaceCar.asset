@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a00b703fab81f4cbd3ad7e58a4eabf, type: 3}
   m_Name: BlueRaceCar
   m_EditorClassIdentifier: 
-  ID: 4
+  ID: 3
   carSprite: {fileID: -6133160613723504190, guid: 35de801a41bb9e742a124b79c7edfa8b, type: 3}
   price: 100
   selectable: 0

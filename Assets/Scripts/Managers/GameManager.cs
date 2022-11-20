@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     public float highscore;
     public Sprite selectedCar;
     public List<int> selectableCars;
+    public List<Sprite> allCars;
 
 
     void Start()
@@ -32,6 +33,7 @@ public class GameManager : MonoBehaviour
             if (PlayerPrefs.HasKey("ownedCar" + i))
             selectableCars.Add(PlayerPrefs.GetInt("ownedCar" + i));
         }
+        selectedCar = allCars[PlayerPrefs.GetInt("SelectedCar")];
     }
 
     // Update is called once per frame

@@ -1197,6 +1197,12 @@ MonoBehaviour:
   highscore: 0
   selectedCar: {fileID: -558417346531380334, guid: 044801f4a6ff9e0408e63fbbaaff8c49, type: 3}
   selectableCars: 0400000001000000
+  allCars:
+  - {fileID: -619152669359170530, guid: 35de801a41bb9e742a124b79c7edfa8b, type: 3}
+  - {fileID: -2554030691755541986, guid: 35de801a41bb9e742a124b79c7edfa8b, type: 3}
+  - {fileID: -8133443095937036803, guid: 35de801a41bb9e742a124b79c7edfa8b, type: 3}
+  - {fileID: -6133160613723504190, guid: 35de801a41bb9e742a124b79c7edfa8b, type: 3}
+  - {fileID: -558417346531380334, guid: 044801f4a6ff9e0408e63fbbaaff8c49, type: 3}
 --- !u!1 &1329161496
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,6 +16,10 @@ public class MenuUI : MonoBehaviour
 
     void Start()
     {
+        Invoke("UpdateMoney", 0.04f);
+    }
+    private void UpdateMoney()
+    {
         money.text = GM.money.ToString();
     }
 

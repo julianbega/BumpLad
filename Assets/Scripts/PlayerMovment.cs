@@ -20,12 +20,12 @@ public class PlayerMovment : MonoBehaviour
     public void Update()
     {
         dx = Input.acceleration.x * speed * Time.deltaTime;
-        dy = Input.acceleration.y * speed * Time.deltaTime;
-        transform.position = new Vector2 (Mathf.Clamp(transform.position.x, -7.5f, 7.5f), Mathf.Clamp(transform.position.y, -7.5f, 7.5f));
+        //dy = Input.acceleration.y * speed * Time.deltaTime;
+        transform.position = new Vector2 (Mathf.Clamp(transform.position.x, -7.5f, 7.5f), transform.position.y);
     }
     private void FixedUpdate()
     {
-        body.velocity = new Vector2(dx, dy);
+        body.velocity = new Vector2(dx, 0f);
     }
 
 

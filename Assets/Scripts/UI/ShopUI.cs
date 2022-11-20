@@ -33,6 +33,7 @@ public class ShopUI : MonoBehaviour
         {
             GM.selectedCar = carsInShop[shoperID].carSprite;
             selectedCar.sprite = GM.selectedCar;
+            PlayerPrefs.SetInt("SelectedCar", shoperID);
         }
 
         if (carsInShop[shoperID].selectable == false)
