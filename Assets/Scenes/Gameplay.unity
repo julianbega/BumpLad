@@ -8705,7 +8705,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -619152669359170530, guid: 35de801a41bb9e742a124b79c7edfa8b, type: 3}
+  m_Sprite: {fileID: -558417346531380334, guid: 044801f4a6ff9e0408e63fbbaaff8c49, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8747,7 +8747,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.7366667, y: 1.4733334}
+    oldSize: {x: 0.8, y: 1.356}
     newSize: {x: 0.7366667, y: 1.4733334}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -8768,7 +8768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fbdb8fe012e52b408a9e2dfb5542091, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 50
   body: {fileID: 904781425}
   PM: {fileID: 904781430}
 --- !u!114 &904781430
@@ -8783,6 +8783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a6dcb29b677aed42b338ee2098c15b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerCar: {fileID: 904781426}
   money: 10
   startPos: {x: 0, y: 0, z: 0}
   pauseButton: {fileID: 387701926}
@@ -8804,7 +8805,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.7366667, y: 1.4733334}
+    oldSize: {x: 0.8, y: 1.356}
     newSize: {x: 0.7366667, y: 1.4733334}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

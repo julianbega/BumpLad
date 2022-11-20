@@ -14,14 +14,18 @@ public class ShopUI : MonoBehaviour
     public Image selectedCar;
     public GameManager GM;
     // Start is called before the first frame update
-    void Start()
+
+    private void Awake()
     {
         GM = FindObjectOfType<GameManager>();
+    }
+    void Start()
+    {
         showMoney.text = GM.money.ToString();
         checkBoughtCars();
         selectedCar.sprite = GM.selectedCar;
     }
-
+  
     public void BuyOrSelectCar(int shoperID)
     {      
 

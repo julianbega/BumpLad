@@ -11,29 +11,6 @@ public class PlayerMovment : MonoBehaviour
     float dy;
     public PlayerManager PM;
 
-#if UNITY_EDITOR && !UNITY_ANDROID
-    float horizontal;
-    float vertical;
-
-    public float unityEditorSpeed;
-
-    private void Start()
-    {
-        body = GetComponent<Rigidbody2D>();
-    }
-
-    void Update()
-    {
-        horizontal = Input.GetAxisRaw("Horizontal");
-        vertical = Input.GetAxisRaw("Vertical");
-    }
-
-    private void FixedUpdate()
-    {
-        body.velocity = new Vector2(horizontal * unityEditorSpeed, vertical * unityEditorSpeed);
-    }
-
-#endif
 
     void Start()
     {        

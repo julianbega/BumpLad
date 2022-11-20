@@ -1196,7 +1196,7 @@ MonoBehaviour:
   money: 0
   highscore: 0
   selectedCar: {fileID: -558417346531380334, guid: 044801f4a6ff9e0408e63fbbaaff8c49, type: 3}
-  selectableCars: 05000000
+  selectableCars: 0400000001000000
 --- !u!1 &1329161496
 GameObject:
   m_ObjectHideFlags: 0
