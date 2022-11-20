@@ -9019,7 +9019,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1200
   body: {fileID: 904781425}
-  PM: {fileID: 904781430}
 --- !u!114 &904781430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9035,8 +9034,6 @@ MonoBehaviour:
   playerCar: {fileID: 904781426}
   money: 10
   startPos: {x: 0, y: 0, z: 0}
-  pauseButton: {fileID: 387701926}
-  defeatPanel: {fileID: 413907698}
 --- !u!61 &904781431
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13430,7 +13427,7 @@ GameObject:
   - component: {fileID: 1458768751}
   - component: {fileID: 1458768750}
   m_Layer: 5
-  m_Name: BackToMenu (1)
+  m_Name: KeepPlaying
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13501,9 +13498,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1581687028}
-        m_TargetAssemblyTypeName: SceneFlowController, Assembly-CSharp
-        m_MethodName: UnPause
+      - m_Target: {fileID: 1581687029}
+        m_TargetAssemblyTypeName: GameUI, Assembly-CSharp
+        m_MethodName: KeepPlaying
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14297,6 +14294,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pausePanel: {fileID: 1982065990}
   money: {fileID: 439937507}
+  pauseButton: {fileID: 387701926}
+  defeatPanel: {fileID: 413907698}
   tutorial: {fileID: 1663267503}
 --- !u!1 &1586080435
 GameObject:

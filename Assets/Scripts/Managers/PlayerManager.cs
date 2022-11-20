@@ -7,13 +7,13 @@ public class PlayerManager : MonoBehaviour
     public SpriteRenderer playerCar;
     public int money;
     public Vector3 startPos;
-    public GameObject pauseButton;
-    public GameObject defeatPanel;
     private GameManager GM;
+    private GameUI GUI;
 
     private void Awake()
     {
         GM = FindObjectOfType<GameManager>();
+        GUI = FindObjectOfType<GameUI>();
     }
     void Start()
     {
@@ -21,13 +21,7 @@ public class PlayerManager : MonoBehaviour
         playerCar.sprite = GM.selectedCar;
     }
 
-    public void Defeat()
-    {
-        Time.timeScale = 0;
-        pauseButton.gameObject.SetActive(false);
-        defeatPanel.gameObject.SetActive(true);
 
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -35,7 +29,7 @@ public class PlayerManager : MonoBehaviour
         if (collision.gameObject.CompareTag("Car"))
         {
             Debug.Log("ChoquePlayer-Auto");
-            Defeat();
+            GUI.Defeat();
         }
 
         

@@ -9,11 +9,11 @@ public class PlayerMovment : MonoBehaviour
     public Rigidbody2D body;
     float dx;
     float dy;
-    public PlayerManager PM;
-
+    private GameUI GUI;
 
     void Start()
-    {        
+    {
+        GUI = FindObjectOfType<GameUI>();
         Input.gyro.enabled = true;
     }
 
@@ -33,7 +33,7 @@ public class PlayerMovment : MonoBehaviour
     {
         if (collision.collider.CompareTag("Car"))
         {
-            PM.Defeat();
+            GUI.Defeat();
         }
     }
 }
