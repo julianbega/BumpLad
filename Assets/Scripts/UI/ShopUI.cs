@@ -40,6 +40,7 @@ public class ShopUI : MonoBehaviour
                 carsInShop[shoperID].selectable = true;
                 checkBoughtCars();
                 GM.selectableCars.Add(shoperID);
+                PlayerPrefs.SetInt("ownedCar" + shoperID, shoperID);
             }
         }
 

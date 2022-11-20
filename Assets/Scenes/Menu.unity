@@ -1193,9 +1193,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 364654e90b1b2574e8cf38c889f52048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 150
+  money: 0
   highscore: 0
   selectedCar: {fileID: -558417346531380334, guid: 044801f4a6ff9e0408e63fbbaaff8c49, type: 3}
+  selectableCars: 05000000
 --- !u!1 &1329161496
 GameObject:
   m_ObjectHideFlags: 0

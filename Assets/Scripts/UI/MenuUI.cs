@@ -8,9 +8,14 @@ public class MenuUI : MonoBehaviour
 {
     GameManager GM;
     public TextMeshProUGUI money;
-    void Start()
+
+    private void Awake()
     {
         GM = FindObjectOfType<GameManager>();
+    }
+
+    void Start()
+    {
         money.text = GM.money.ToString();
     }
 

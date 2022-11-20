@@ -26,8 +26,12 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        PlayerPrefs.GetInt("money");
-        
+        money = PlayerPrefs.GetInt("money");
+        for (int i = 0; i < 5; i++)
+        {
+            if (PlayerPrefs.HasKey("ownedCar" + i))
+            selectableCars.Add(PlayerPrefs.GetInt("ownedCar" + i));
+        }
     }
 
     // Update is called once per frame
