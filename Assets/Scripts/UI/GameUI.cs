@@ -11,18 +11,21 @@ public class GameUI : MonoBehaviour
     private GameManager GM;
     private PlayerManager PM;
 
+
+    public GameObject tutorial;
+
     // Start is called before the first frame update
     void Start()
     {
         GM = FindObjectOfType<GameManager>();
         PM = FindObjectOfType<PlayerManager>();
         money.text = GM.money.ToString();
+        Invoke("HideTuto", 2.95f);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void HideTuto()
     {
-        
+        tutorial.SetActive(false);
     }
 
     public void UpdateMoney()
