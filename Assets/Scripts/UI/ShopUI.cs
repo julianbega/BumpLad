@@ -64,6 +64,10 @@ public class ShopUI : MonoBehaviour
             {
                 buttonsText[i].text = "Select";
             }
+            else
+            {
+                buttonsText[i].text = "Buy";
+            }
 
         }
     }

@@ -16,4 +16,3 @@ MonoBehaviour:
   carSprite: {fileID: -2554030691755541986, guid: 35de801a41bb9e742a124b79c7edfa8b, type: 3}
   price: 100
   selectable: 1
-  buttonText: {fileID: 0}

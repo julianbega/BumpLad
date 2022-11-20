@@ -40,6 +40,12 @@ public class MenuUI : MonoBehaviour
             GM.selectableCars.Clear();
             GM.selectableCars.Add(4);
             GM.selectedCar = GM.allCars[4];
+            for (int j = 0; j < 5; j++)
+            {
+                if (PlayerPrefs.HasKey("ownedCar" + j))
+                    PlayerPrefs.DeleteKey("ownedCar" + j);
+            }
+            PlayerPrefs.SetInt("SelectedCar", 4);
         }
 
     }
