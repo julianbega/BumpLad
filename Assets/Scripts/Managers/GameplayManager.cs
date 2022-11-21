@@ -11,11 +11,26 @@ public class GameplayManager : MonoBehaviour
 
     public float maxSpeed;
     public float minSpeed;
+
+    public int kmTraveled;
+    public bool onGame;
+    float timeAux;
     private void Start()
     {
         InvokeRepeating("spawner", 2.0f, 0.5f);
         GooglePlay.Init();
+        kmTraveled = 0;
+        onGame = true;
     }
+    private void Update()
+    {
+        if(onGame)
+        {
+            timeAux += Time.deltaTime;
+            kmTraveled = Mathf.RoundToInt(timeAux);
+        }
+    }
+
     public void spawnCar(int id)
     {
         cars[id].isOnGame = true;

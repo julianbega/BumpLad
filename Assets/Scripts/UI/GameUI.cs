@@ -8,6 +8,9 @@ public class GameUI : MonoBehaviour
 {
     public GameObject pausePanel;
     public TextMeshProUGUI money;
+    public TextMeshProUGUI kmTraveled;
+    public TextMeshProUGUI onGameKmTraveled;
+    public GameObject HighScore;
     private GameManager GM;
     private PlayerManager PM;
     private GameplayManager GPM;
@@ -37,7 +40,10 @@ public class GameUI : MonoBehaviour
         GM.money += PM.money;
         money.text = GM.money.ToString();
     }
-
+    private void Update()
+    {
+        onGameKmTraveled.text = GPM.kmTraveled.ToString();
+    }
     public void ShowGO(GameObject objectToShow)
     {
         objectToShow.SetActive(true);
@@ -64,6 +70,17 @@ public class GameUI : MonoBehaviour
         Time.timeScale = 0;
         pauseButton.gameObject.SetActive(false);
         defeatPanel.gameObject.SetActive(true);
+        GPM.onGame = false;
+        kmTraveled.text = GPM.kmTraveled.ToString();
+        if (!PlayerPrefs.HasKey("HighScore"))
+        {
+            PlayerPrefs.SetInt("HighScore", 0);
+        }
+        if (GPM.kmTraveled > PlayerPrefs.GetInt("HighScore"))
+        {
+            HighScore.SetActive(true);
+            PlayerPrefs.SetInt("HighScore", GPM.kmTraveled);
+        }
 
     }
     public void KeepPlaying()
