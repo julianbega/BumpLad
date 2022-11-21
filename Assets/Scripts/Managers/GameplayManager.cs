@@ -56,26 +56,25 @@ public class GameplayManager : MonoBehaviour
             if (kmTraveled > 180)
             {
                 actualMaxSpeed = maxSpeed[6];
-                PlayGamesPlatform.Instance.Authenticate((callback) => { GooglePlay.UnlockAchievement(GooglePlay.achievement3ID); });
+                GooglePlay.UnlockAchievement(GooglePlay.achievement3ID);
             }
         }
     }
 
     public void spawnCar(int id)
     {
-        cars[id].isOnGame = true;
         int intAux;
-        intAux = Random.Range(0, 2);
-        cars[id].goingFast = intAux;
+        intAux = Random.Range(1, 3);
+        cars[id].state = intAux;
         float floatAux;
         floatAux = Random.Range(minSpeed, actualMaxSpeed);
         float aux = Random.Range(Xposition[0], Xposition[5]);
         cars[id].speed = floatAux;
-        if (cars[id].goingFast == 0)
+        if (cars[id].state == 1)
         {
             cars[id].gameObject.transform.position = new Vector3(aux, Yposition[0], transform.position.z);
         }
-        else
+        else if (cars[id].state == 2)
         {
             cars[id].gameObject.transform.position = new Vector3(aux, Yposition[1], transform.position.z);
         }
@@ -96,11 +95,11 @@ public class GameplayManager : MonoBehaviour
         bool allTrue = true;
         for (int i = 0; i < 11; i++)
         {
-            if (cars[intAux].isOnGame == false)
+            if (cars[intAux].state == 0)
                 allTrue = false;
         }
 
-        while (cars[intAux].isOnGame == true && allTrue == false)
+        while (cars[intAux].state != 0 && allTrue == false)
         {
             intAux = Random.Range(0, 11);
         }

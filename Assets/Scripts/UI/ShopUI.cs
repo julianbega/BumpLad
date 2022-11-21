@@ -48,7 +48,7 @@ public class ShopUI : MonoBehaviour
                 GM.selectableCars.Add(shoperID);
                 PlayerPrefs.SetInt("ownedCar" + shoperID, shoperID);
                 Logger.AndroidLog("Buy Car");
-                PlayGamesPlatform.Instance.Authenticate((callback) => { GooglePlay.UnlockAchievement(GooglePlay.achievement2ID); });
+                GooglePlay.UnlockAchievement(GooglePlay.achievement2ID);
             }
         }
 

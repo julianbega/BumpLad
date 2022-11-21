@@ -4,23 +4,27 @@ using UnityEngine;
 
 public class Car : MonoBehaviour
 {
-
-    public int goingFast;
     public float speed;
-    public bool isOnGame;
-
-
+    public int state;
 
     void Update()
     {
-        if (goingFast == 0)
+        switch (state)
         {
-            transform.Translate(Vector3.up * Time.deltaTime * speed, Space.World);
-        }
-        else
-        {
+            case 0:
+                
+                break;
+            case 1:
+                transform.Translate(Vector3.up * Time.deltaTime * speed, Space.World);
+                break;
+            case 2:
             transform.Translate(Vector3.down * Time.deltaTime * speed, Space.World);
+                break;
+
+            default:
+                break;
         }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -28,9 +32,8 @@ public class Car : MonoBehaviour
         
         if (collision.gameObject.CompareTag("Car"))
         {
-            Debug.Log("ChoqueEntreAutos");
             float auxSpeed = collision.gameObject.GetComponent<Car>().speed;
-            goingFast = 0;
+            state = 1;
             if (auxSpeed >= speed)
             {
                 speed = auxSpeed;
@@ -39,10 +42,9 @@ public class Car : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Finish"))
         {
-            Debug.Log("Finish");
             speed = 0;
             transform.position = new Vector3(15, 15, -1.0f);
-            isOnGame = false;
+            state = 0;
         }
     }
 

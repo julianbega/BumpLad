@@ -86,17 +86,20 @@ public class GameUI : MonoBehaviour
     }
     public void KeepPlaying()
     {
-        GM.money -= 75;
-        UpdateMoney();
-        for (int i = 0; i < GPM.cars.Count; i++)
+        if (GM.money >= 75)
         {
-            GPM.cars[i].speed = 0;
-            GPM.cars[i]. isOnGame = false;
-            GPM.cars[i].transform.position = new Vector3(15, 15, -1.0f);
+            GM.money -= 75;
+            UpdateMoney();
+            for (int i = 0; i < GPM.cars.Count; i++)
+            {
+                GPM.cars[i].speed = 0;
+                GPM.cars[i].state = 0;
+                GPM.cars[i].transform.position = new Vector3(15, 15, -1.0f);
+            }
+            defeatPanel.gameObject.SetActive(false);
+            Time.timeScale = 1;
+            GPM.onGame = true;
+            Logger.AndroidLog("Pay to keep playing");
         }
-        defeatPanel.gameObject.SetActive(false);
-        Time.timeScale = 1;
-        GPM.onGame = true;
-        Logger.AndroidLog("Pay to keep playing");
     }
 }

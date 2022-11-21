@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public class LoggerManager : MonoBehaviour
 {
-    private Logger logs;
     private FileManager fileManager;
     private Alert alertManager;
 
