@@ -9,8 +9,9 @@ public class GameplayManager : MonoBehaviour
     public float[] Xposition;
     public float[] Yposition;
 
-    public float maxSpeed;
-    public float minSpeed;
+    public List<int> maxSpeed;
+    public int minSpeed;
+    public int actualMaxSpeed;
 
     public int kmTraveled;
     public bool onGame;
@@ -21,6 +22,7 @@ public class GameplayManager : MonoBehaviour
         GooglePlay.Init();
         kmTraveled = 0;
         onGame = true;
+        actualMaxSpeed = maxSpeed[0];
     }
     private void Update()
     {
@@ -28,6 +30,32 @@ public class GameplayManager : MonoBehaviour
         {
             timeAux += Time.deltaTime;
             kmTraveled = Mathf.RoundToInt(timeAux);
+        }
+        {
+            if (kmTraveled > 30)
+            {
+                actualMaxSpeed = maxSpeed[1];
+            }
+            if (kmTraveled > 60)
+            {
+                actualMaxSpeed = maxSpeed[2];
+            }
+            if (kmTraveled > 90)
+            {
+                actualMaxSpeed = maxSpeed[3];
+            }
+            if (kmTraveled > 120)
+            {
+                actualMaxSpeed = maxSpeed[4];
+            }
+            if (kmTraveled > 150)
+            {
+                actualMaxSpeed = maxSpeed[5];
+            }
+            if (kmTraveled > 180)
+            {
+                actualMaxSpeed = maxSpeed[6];
+            }
         }
     }
 
@@ -38,7 +66,7 @@ public class GameplayManager : MonoBehaviour
         intAux = Random.Range(0, 2);
         cars[id].goingFast = intAux;
         float floatAux;
-        floatAux = Random.Range(minSpeed, maxSpeed);
+        floatAux = Random.Range(minSpeed, actualMaxSpeed);
         float aux = Random.Range(Xposition[0], Xposition[5]);
         cars[id].speed = floatAux;
         if (cars[id].goingFast == 0)

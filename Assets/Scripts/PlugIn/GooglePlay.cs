@@ -10,22 +10,6 @@ public static class GooglePlay
         PlayGamesPlatform.Instance.Authenticate((callback) => { UnlockAchievement(achievement1ID); });
     }
 
-    static public void AddScoreToLeaderboard(int score)
-    {
-        if (Social.Active.localUser.authenticated)
-        {
-            PlayGamesPlatform.Instance.ReportScore(score, "Timer Board", success => { Debug.Log("Se subio al leaderboard"); });
-        }
-    }
-
-    static public void ShowLeaderboard()
-    {
-        if (PlayGamesPlatform.Instance.IsAuthenticated())
-        {
-            PlayGamesPlatform.Instance.ShowLeaderboardUI();
-        }
-    }
-
     static public void ShowAchievements()
     {
         if (PlayGamesPlatform.Instance.IsAuthenticated())
