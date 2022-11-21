@@ -95,5 +95,6 @@ public class GameUI : MonoBehaviour
         }
         defeatPanel.gameObject.SetActive(false);
         Time.timeScale = 1;
+        GPM.onGame = true;
     }
 }
