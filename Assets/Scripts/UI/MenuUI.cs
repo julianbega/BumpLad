@@ -47,6 +47,9 @@ public class MenuUI : MonoBehaviour
             }
             PlayerPrefs.SetInt("SelectedCar", 4);
         }
-
+    }
+    public void cheatScoreToZero()
+    {
+        PlayerPrefs.SetInt("HighScore", 0);
     }
 }
