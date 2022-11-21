@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using GooglePlayGames;
 
 public class GameplayManager : MonoBehaviour
 {    
@@ -55,6 +56,7 @@ public class GameplayManager : MonoBehaviour
             if (kmTraveled > 180)
             {
                 actualMaxSpeed = maxSpeed[6];
+                PlayGamesPlatform.Instance.Authenticate((callback) => { GooglePlay.UnlockAchievement(GooglePlay.achievement3ID); });
             }
         }
     }

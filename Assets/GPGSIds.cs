@@ -24,7 +24,9 @@
 
 public static class GPGSIds
 {
+        public const string achievement_goingfast = "CgkIj7mNiKgBEAIQAg"; // <GPGSID>
         public const string achievement_startgame = "CgkIj7mNiKgBEAIQAA"; // <GPGSID>
+        public const string achievement_new_car = "CgkIj7mNiKgBEAIQAQ"; // <GPGSID>
 
 }
 

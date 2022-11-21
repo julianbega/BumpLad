@@ -4,6 +4,10 @@ using GooglePlayGames;
 public static class GooglePlay
 {
     private static string achievement1ID = GPGSIds.achievement_startgame;
+    public static string achievement2ID = GPGSIds.achievement_new_car;
+    public static string achievement3ID = GPGSIds.achievement_goingfast;
+
+
 
     public static void Init()
     {
