@@ -17,6 +17,7 @@ public class GameplayManager : MonoBehaviour
     public int kmTraveled;
     public bool onGame;
     float timeAux;
+    public bool allTrue;
     private void Start()
     {
         InvokeRepeating("spawner", 2.0f, 0.5f);
@@ -24,6 +25,7 @@ public class GameplayManager : MonoBehaviour
         kmTraveled = 0;
         onGame = true;
         actualMaxSpeed = maxSpeed[0];
+        allTrue = true;
     }
     private void Update()
     {
@@ -92,7 +94,7 @@ public class GameplayManager : MonoBehaviour
         int intAux;
         intAux = Random.Range(0, 11);
 
-        bool allTrue = true;
+       
         for (int i = 0; i < 11; i++)
         {
             if (cars[intAux].state == 0)

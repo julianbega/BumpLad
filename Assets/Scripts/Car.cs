@@ -7,6 +7,10 @@ public class Car : MonoBehaviour
     public float speed;
     public int state;
 
+    private void Start()
+    {
+        state = 0;
+    }
     void Update()
     {
         switch (state)
@@ -30,7 +34,7 @@ public class Car : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         
-        if (collision.gameObject.CompareTag("Car"))
+        if (collision.gameObject.CompareTag("Car") && state != 0)
         {
             float auxSpeed = collision.gameObject.GetComponent<Car>().speed;
             state = 1;
