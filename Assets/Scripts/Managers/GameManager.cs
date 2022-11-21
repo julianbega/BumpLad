@@ -28,6 +28,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+
+        Logger.InitializePlugin();
         money = PlayerPrefs.GetInt("money");
         for (int i = 0; i < 5; i++)
         {

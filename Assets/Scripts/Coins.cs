@@ -20,7 +20,6 @@ public class Coins : MonoBehaviour
 
     void Update()
     {
-        isColliding = false;
         transform.Translate(Vector3.down * Time.deltaTime * speed, Space.World);
         if (transform.position.y <= limitY)
         {
@@ -39,8 +38,12 @@ public class Coins : MonoBehaviour
         PM.money += 1;
         int aux = Random.Range(0, 5);
         this.transform.position = new Vector3(Xposition[aux], 7.0f, transform.position.z);
+        Invoke("ColisionUpdate", 0.5f);
     }
-
+    void ColisionUpdate()
+    {
+        isColliding = false;
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
