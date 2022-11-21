@@ -34,6 +34,7 @@ public class PlayerMovment : MonoBehaviour
         if (collision.collider.CompareTag("Car"))
         {
             GUI.Defeat();
+            Logger.AndroidLog("Player crash with Car");
         }
     }
 }

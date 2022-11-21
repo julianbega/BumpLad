@@ -22,16 +22,15 @@ public class LoggerManager : MonoBehaviour
             Debug.LogWarning("Wrong platform");
             return;
         }
-        logs = new Logger();
         fileManager = new FileManager();
         alertManager = new Alert();
         logButton.onClick.AddListener(ExampleLogCall);
         logButtonUnity.onClick.AddListener(UnityLogCall);
         ClearDataButton.onClick.AddListener(ShowAlert);
-        logs.OnAndroidCall += UpdateShowingText;
+        Logger.OnAndroidCall += UpdateShowingText;
         UpdateShowingText("Start Test PluginExample");
     }
-    public void ExampleLogCall() => logs.AndroidLog("Ejemplo de log");
+    public void ExampleLogCall() => Logger.AndroidLog("Ejemplo de log");
 
     public void UnityLogCall() => Debug.Log("example_unity_Debug.Log");
 

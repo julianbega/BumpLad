@@ -53,6 +53,7 @@ public class Coins : MonoBehaviour
             isColliding = true;
             SpawnCoin();
             GUI.UpdateMoney();
+            Logger.AndroidLog("Get Coin");
         }
     }
 

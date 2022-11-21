@@ -80,6 +80,7 @@ public class GameUI : MonoBehaviour
         {
             HighScore.SetActive(true);
             PlayerPrefs.SetInt("HighScore", GPM.kmTraveled);
+            Logger.AndroidLog("New Highscore");
         }
 
     }
@@ -96,5 +97,6 @@ public class GameUI : MonoBehaviour
         defeatPanel.gameObject.SetActive(false);
         Time.timeScale = 1;
         GPM.onGame = true;
+        Logger.AndroidLog("Pay to keep playing");
     }
 }

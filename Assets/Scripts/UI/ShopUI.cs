@@ -34,6 +34,7 @@ public class ShopUI : MonoBehaviour
             GM.selectedCar = carsInShop[shoperID].carSprite;
             selectedCar.sprite = GM.selectedCar;
             PlayerPrefs.SetInt("SelectedCar", shoperID);
+            Logger.AndroidLog("New Car Selected");
         }
 
         if (carsInShop[shoperID].selectable == false)
@@ -46,6 +47,7 @@ public class ShopUI : MonoBehaviour
                 checkBoughtCars();
                 GM.selectableCars.Add(shoperID);
                 PlayerPrefs.SetInt("ownedCar" + shoperID, shoperID);
+                Logger.AndroidLog("Buy Car");
             }
         }
 
